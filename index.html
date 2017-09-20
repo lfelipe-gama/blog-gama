@@ -2,6 +2,18 @@
 <html lang="pt-br">
 
   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/validator.min.js"></script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106737165-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106737165-1');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -130,17 +142,29 @@
             <h4 class="card-header">E-BOOK <strong style="font-size:1.2em">GRÁTIS 5 SEGREDOS</strong> PARA TRANSFORMAR <strong style="font-size:1.2em">CLIQUES</strong> EM <strong style="font-size:1.2em">CLIENTES</strong></h4>
             <img class="card-img-top" src="img/ebook.jpg" alt="Card image cap">
             <div class="card-body">
-              
-              <div class="">
-                <input type="text" class="form-control" placeholder="Nome Completo">
-                <br>
-                <input type="text" class="form-control" placeholder="E-mail">
-                <br>
-                <span class="input-group-btn text-center">
-                  <button class="btn-lg btn-secondary" style="width: 100%" type="button">BAIXAR E-BOOK GRÁTIS</button>
-                </span>
-              </div>
-            
+         
+            <form id="lead-form" role="form" action="recebePost.php" method="post">
+                                
+                                  <div class="form-group">
+                                      <input id="name" name="name" class="form-control" placeholder="Nome" minlength="3" maxlength="60" type="text" required>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <input id="lastname" name="lastname" class="form-control" placeholder="Sobrenome" minlength="3" maxlength="60" type="text" required>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                
+                                  <div class="form-group ">
+                                      <input id="email" name="email" class="form-control" placeholder="Seu melhor e-mail" type="email" required>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                      <button type="submit" style="width:100%" class="btn-lg btn-secondary">BAIXAR E-BOOK AGORA</button>
+                                  </div>
+                              </form>
+                                  
             </div>
           </div>
 
