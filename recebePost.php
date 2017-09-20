@@ -34,6 +34,8 @@ echo "<pre>";
 echo "</pre>";
 
 
-//redirect para thanks-page
+//redirect para obrigado.html
+
+
 
 ?>
